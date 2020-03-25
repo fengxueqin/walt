@@ -1,0 +1,17 @@
+def huiwen(str1):
+    length = len(str1)
+    last = length -1
+    for i in range(0,length-1):
+        if str1[i] == str1[last]:
+             count = 1
+             last -= 1
+        else:
+             count = 0
+        return count
+string1 = input('请输入一句话：')
+huiwen(string1)
+if huiwen(string1) == 1:
+    print('是回文联!')
+else:
+    print('不是回文联！')
+
